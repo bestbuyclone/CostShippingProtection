@@ -1,0 +1,19 @@
+{
+  "name": "costshipping",
+  "version": "1.0.0",
+  "description": "Cost shipping & protection microservice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bestbuyclone/CostShippingProtection.git"
+  },
+  "author": "Matt Brannon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bestbuyclone/CostShippingProtection/issues"
+  },
+  "homepage": "https://github.com/bestbuyclone/CostShippingProtection#readme"
+}
