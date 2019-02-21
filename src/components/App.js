@@ -74,6 +74,9 @@ class App extends Component {
                         <button className='save-for-later'>Save for Later</button>
 
                     </div>
+                    <div>
+                        <input id='checkbox' type='checkbox' />Compare
+                    </div>
                 </div>
             </div>
         )

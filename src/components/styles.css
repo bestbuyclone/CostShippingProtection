@@ -128,3 +128,8 @@ img {
 #price, #monthly {
     font-weight: bold
 }
+
+
+input[type=checkbox] {
+    zoom: 2.5;
+}
