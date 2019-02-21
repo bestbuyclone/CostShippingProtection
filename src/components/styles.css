@@ -1,3 +1,7 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 h1 {
     font-family: 'Courier New', Courier, monospace;
 }
@@ -115,3 +119,12 @@ img {
     font-size: 24px;
 }
   
+
+#guarantee {
+    font-weight: bold;
+}
+
+
+#price, #monthly {
+    font-weight: bold
+}

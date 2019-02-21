@@ -2,15 +2,41 @@ import React, { Component } from 'react';
 import Button from './Button';
 import './styles.css';
 
+/*
+Todo:
+Modularize service into multiple components
+Fix list of protection plans css
+Remove hard coded data
+And then.... 
+*/
+
 class App extends Component {
     constructor(props) {
-        super(props)
+        super(props);
+        this.state = {
+            price: 399.99,
+            monthlyPayment: 33.34,
+            twoYearPlan: 49.99,
+            fiveYearPlan: 89.99
+        }
     }
 
     render() {
         return (
             <div>
                 <div className='main'>
+
+                    <div>
+                        <p className='price-match'>PRICE MATCH<span id='guarantee'> GUARANTEE</span></p>
+                        <div>
+                            <span id='price'>${this.state.price}</span>
+                            <span> or</span>
+                            <span id='monthly'> ${this.state.monthlyPayment}/month</span>
+                        </div>
+                    </div>
+
+
+
                     <hr />
 
                     <div id="main-container">
@@ -25,9 +51,9 @@ class App extends Component {
 
                     <div className='list-plans'>
                         <ul>
-                            <li>Plan 1</li>
-                            <li>Plan 2</li>
-                            <li>Plan 3</li>
+                            <li>{this.state.twoYearPlan}</li>
+                            <li>{this.state.fiveYearPlan}</li>
+                            <li>No Plan</li>
                         </ul>
                     </div>
 
