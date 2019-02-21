@@ -14,7 +14,8 @@ class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            price: 399.99,
+            originalPrice: 529.99,
+            currentPrice: 399.99,
             monthlyPayment: 33.34,
             twoYearPlan: 49.99,
             fiveYearPlan: 89.99
@@ -29,9 +30,12 @@ class App extends Component {
                     <div>
                         <p className='price-match'>PRICE MATCH<span id='guarantee'> GUARANTEE</span></p>
                         <div>
-                            <span id='price'>${this.state.price}</span>
+                            <span id='price'>${this.state.currentPrice}</span>
                             <span> or</span>
                             <span id='monthly'> ${this.state.monthlyPayment}/month</span>
+                        </div>
+                        <div id='savings'>
+                            Save ${this.state.originalPrice - this.state.currentPrice}
                         </div>
                     </div>
 

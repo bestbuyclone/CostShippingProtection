@@ -133,3 +133,12 @@ img {
 input[type=checkbox] {
     zoom: 2.5;
 }
+
+
+#savings {
+    text-align: center;
+    width: 100px;
+    background-color: darkred;
+    color: white;
+    padding: 2px;
+}
