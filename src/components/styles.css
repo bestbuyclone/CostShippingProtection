@@ -13,8 +13,12 @@ button {
 }
 
 .add-to-cart {
-    background-color: yellow;
+    background-color: rgb(255, 230, 0);
     color: black;
+}
+
+.add-to-cart:hover {
+    background-color: yellow;
 }
 
 .build-a-bundle {
@@ -22,7 +26,17 @@ button {
     color: white;
 }
 
+.build-a-bundle:hover {
+    background-color: darkblue;
+}
+
 .save-for-later {
     background-color: white;
     color: blue;
 }
+
+.save-for-later:hover {
+    background-color: darkblue;
+    color: white;
+}
+

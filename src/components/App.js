@@ -10,7 +10,7 @@ class App extends Component {
         return (
             <div>
                 <div>
-                    <button className='add-to-cart'>Add to Cart</button>
+                    <button className='add-to-cart'>&#xe116; Add to Cart</button>
 
                 </div>
                 <div>
