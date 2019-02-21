@@ -142,3 +142,10 @@ input[type=checkbox] {
     color: white;
     padding: 2px;
 }
+
+#original-price {
+    text-align: center;
+    width: 100px;
+    padding: 2px;
+
+}

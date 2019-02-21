@@ -37,6 +37,9 @@ class App extends Component {
                         <div id='savings'>
                             Save ${this.state.originalPrice - this.state.currentPrice}
                         </div>
+                        <div id='original-price'>
+                            Was ${this.state.originalPrice}
+                        </div>
                     </div>
 
 
