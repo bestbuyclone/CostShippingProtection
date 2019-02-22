@@ -18,10 +18,32 @@ class App extends Component {
         this.state = {
             originalPrice: 529.99,
             currentPrice: 399.99,
-            monthlyPayment: 33.34,
+            monthlyPayment: 0,
+            totalSavings: 0,
             twoYearPlan: 49.99,
             fiveYearPlan: 89.99
         }
+        this.calculateMonthlyPayment = this.calculateMonthlyPayment.bind(this);
+        this.calculateTotalSavings = this.calculateTotalSavings.bind(this);
+    }
+
+    calculateMonthlyPayment() {
+        const payment = this.state.currentPrice / 12;
+        console.log(payment)
+        this.setState({
+            monthlyPayment: payment.toFixed(2)
+        })
+    }
+
+    calculateTotalSavings() {
+        this.setState({
+            totalSavings: this.state.originalPrice - this.state.currentPrice
+        })
+    }
+
+    componentDidMount() {
+        this.calculateMonthlyPayment()
+        this.calculateTotalSavings();
     }
 
     render() {
@@ -37,7 +59,7 @@ class App extends Component {
                             <span id='monthly'> ${this.state.monthlyPayment}/month</span>
                         </div>
                         <div id='savings'>
-                            Save ${this.state.originalPrice - this.state.currentPrice}
+                            Save ${this.state.totalSavings}
                         </div>
                         <div id='original-price'>
                             Was ${this.state.originalPrice}
