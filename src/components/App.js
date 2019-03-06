@@ -90,9 +90,11 @@ class App extends Component {
 
                     <hr />
 
-                    {/* <Button className='add-to-cart' children='Add to Cart' />
-                    <Button className='build-a-bundle' children='Build A Bundle' />
-                    <Button className='save-for-later' children='Save for Later' /> */}
+                    <Button className='button-component' children='Add to Cart' />
+                    <Button className='button-component' children='Build A Bundle' />
+                    <Button className='button-component' children='Save for Later' />
+
+
                     <div>
                         <button className='add-to-cart'>&#xe116; Add to Cart</button>
 
