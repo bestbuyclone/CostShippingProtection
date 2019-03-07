@@ -29,7 +29,7 @@ class App extends Component {
 
     calculateMonthlyPayment() {
         const payment = this.state.currentPrice / 12;
-        console.log(payment)
+        //console.log(payment)
         this.setState({
             monthlyPayment: payment.toFixed(2)
         })
@@ -42,7 +42,7 @@ class App extends Component {
     }
 
     componentDidMount() {
-        this.calculateMonthlyPayment()
+        this.calculateMonthlyPayment();
         this.calculateTotalSavings();
     }
 
@@ -90,9 +90,9 @@ class App extends Component {
 
                     <hr />
 
-                    <Button className='button-component' children='Add to Cart' />
+                    {/* <Button className='button-component' children='Add to Cart' />
                     <Button className='button-component' children='Build A Bundle' />
-                    <Button className='button-component' children='Save for Later' />
+                    <Button className='button-component' children='Save for Later' /> */}
 
 
                     <div>
